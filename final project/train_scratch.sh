@@ -53,5 +53,5 @@ for ((FOLD=0; FOLD<7; FOLD++)); do
     python run_train.py -b=$BATCH -gacc=$gacc -f=$FOLD -nf=7 -fv=1 \
         --lr=0.005 -opt=sgd --decay_step=100 --decay_gamma=0.5 \
         -aug=2 --weight_decay=0.0005 \
-        -o="${o_dir}" --epochs=$epochs --no_cudnn -net="Unet7"
+        -o="${o_dir}" --epochs=$epochs --no_cudnn
 done
